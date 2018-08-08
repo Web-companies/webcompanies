@@ -27,3 +27,14 @@ function bootstrap_wp_setup()
 }
 
 add_action('after_setup_theme', 'bootstrap_wp_setup');
+
+function register_my_menus()
+{
+    register_nav_menus(
+        array(
+            'header-menu' => __('Header Menu'),
+            'extra-menu' => __('Extra Menu'),
+        )
+    );
+}
+add_action('init', 'register_my_menus');

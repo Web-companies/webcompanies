@@ -17,6 +17,29 @@
 
     <?php wp_head();?>
 </head>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<!-- Image and text -->
+<nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand" href="#">
+    <img src="" width="30" height="30" class="d-inline-block align-top" alt="">
+    Bootstrap
+  </a>
+</nav>  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+   <?
+  wp_nav_menu(
+    array(
+      'theme_location' => 'header-menu',
+      'theme_location' => 'extra-menu',
+      'container_class' => 'my_extra_menu_class'
+    )
+  );
+  ?>
+  </div>
+</nav>
 
 <body <?php body_class();?>>
 
