@@ -29,15 +29,15 @@
   </button>
 
   <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-   <?
-  wp_nav_menu(
+   <?php
+
+wp_nav_menu(
     array(
-      'theme_location' => 'header-menu',
-      'theme_location' => 'extra-menu',
-      'container_class' => 'my_extra_menu_class'
+        'theme_location' => 'header-menu',
+        //'container_class' => 'my_extra_menu_class',
     )
-  );
-  ?>
+);
+?>
   </div>
 </nav>
 
