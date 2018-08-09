@@ -24,21 +24,18 @@
     <img src="" width="30" height="30" class="d-inline-block align-top" alt="">
     Bootstrap
   </a>
-</nav>  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-
-  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-   <?php
-
+         <?php
 wp_nav_menu(
     array(
+        'container_class' => 'collapse navbar-collapse',
         'theme_location' => 'header-menu',
-        //'container_class' => 'my_extra_menu_class',
+        'menu_class' => 'navbar-nav',
     )
 );
 ?>
-  </div>
 </nav>
 
 <body <?php body_class();?>>
